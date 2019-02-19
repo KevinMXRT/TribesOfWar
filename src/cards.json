@@ -1,0 +1,18 @@
+[
+  {
+    "id":0,
+    "name":"Das Ungeteilte",
+    "description":"Description goes here.",
+    "image":"images/undivided72.jpg",
+    "generation":1,
+    "realm":"Mystical",
+    "faction":"Magical",
+    "level":9999,
+    "attack":9999,
+    "defend":9999,
+    "strategy":9999,
+    "winCount":0,
+    "lossCount":0,
+    "tokenURI":"http://localhost:3000/card1.json"
+  }
+]

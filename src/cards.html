@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MXRT's Tribes of War</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/album.css" rel="stylesheet">
+    <style>
+    .temple {
+      background-image: url("images/background-temple-dark.jpg");
+      background-size: cover;
+    }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #000000;">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.jpg" height="70">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="cards.html">Warriors</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Quests</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Battle</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="admin.html">Admin</a>
+            </li>
+          </ul>
+          </div>
+        </nav>
+
+        <main role="main">
+          <div class="container">
+            <h1>Warriors</h1>
+            <p class="lead">Build your tribe with these epic warriors.</p>
+          </div>
+          <div class="album py-5 bg-light">
+            <div class="container">
+              <div id="cardsRow" class="row">
+                <!-- WARRIORS LOAD HERE -->
+              </div>
+            </div>
+          </div>
+        </main>
+
+
+    <div id="cardTemplate" style="display: none;">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 shadow-sm">
+          <img class="card-img-top" src="images/undivided72.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title warrior-name">Warrior Name</h5>
+            <p class="card-text">
+            <strong>Description</strong>: <span class="card-description">Description</span><br/>
+            <strong>Generation</strong>: <span class="card-generation">Generation</span><br/>
+            <strong>Realm</strong>: <span class="card-realm">Realm</span><br/>
+            <strong>Faction</strong>: <span class="card-faction">Faction</span><br/>
+            <strong>Level</strong>: <span class="card-level">Level</span><br/>
+            <strong>Attack</strong>: <span class="card-attack">Attack</span><br/>
+            <strong>Defense</strong>: <span class="card-defend">Defend</span><br/>
+            <strong>Strategy</strong>: <span class="card-strategy">Strategy</span><br/>
+            <strong>Win Count</strong>: <span class="card-winCount">Win Count</span><br/>
+            <strong>Loss Count</strong>: <span class="card-lossCount">Loss Count</span><br/>
+            </p>
+            <hr/>
+
+            <form>
+              <div class="form-group">
+                <label for="cardTo">Send to Wallet</label>
+                <input type="text" class="form-control form-control-sm to" id="tox" aria-describedby="cardToHelp" placeholder="Wallet Address">
+                <small id="cardToHelp" class="form-text text-muted">Make sure this is an Ethereum wallet.</small>
+              </div>
+              <input class="warName" id="warNamex" value="Card Name">
+              <input class="level" id="levelx" value="0">
+              <input class="attack" id="attackx" value="0">
+              <input class="defend" id="defendx" value="0">
+              <input class="strategy" id="strategyx" value="0">
+              <input class="winCount" id="winCountx" value="0">
+              <input class="lossCount" id="lossCountx" value="0">
+              <input class="tokenURI" id="tokenURIx" value="Meta Path">
+              <hr/>
+              <button type="submit" id="cardCollect4" class="btn btn-primary ">Add to My Tribe</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cardTemplate2">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 shadow-sm">
+          <img class="card-img-top" src="images/undivided72.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title warrior-name">Warrior Name</h5>
+            <p class="card-text">
+            <strong>Description</strong>: <span class="card-description">Description</span><br/>
+            <strong>Generation</strong>: <span class="card-generation">Generation</span><br/>
+            <strong>Realm</strong>: <span class="card-realm">Realm</span><br/>
+            <strong>Faction</strong>: <span class="card-faction">Faction</span><br/>
+            <strong>Level</strong>: <span class="card-level">Level</span><br/>
+            <strong>Attack</strong>: <span class="card-attack">Attack</span><br/>
+            <strong>Defense</strong>: <span class="card-defend">Defend</span><br/>
+            <strong>Strategy</strong>: <span class="card-strategy">Strategy</span><br/>
+            <strong>Win Count</strong>: <span class="card-winCount">Win Count</span><br/>
+            <strong>Loss Count</strong>: <span class="card-lossCount">Loss Count</span><br/>
+            </p>
+            <hr/>
+
+            <form>
+              <div class="form-group">
+                <label for="cardTo">Send to Wallet</label>
+                <input type="text" class="form-control form-control-sm to" id="to" aria-describedby="cardToHelp" placeholder="Wallet Address">
+                <small id="cardToHelp" class="form-text text-muted">Make sure this is an Ethereum wallet.</small>
+              </div>
+              <input class="warName" id="warName" value="Card Name">
+              <input class="level" id="level" value="0">
+              <input class="attack" id="attack" value="0">
+              <input class="defend" id="defend" value="0">
+              <input class="strategy" id="strategy" value="0">
+              <input class="winCount" id="winCount" value="0">
+              <input class="lossCount" id="lossCount" value="0">
+              <input class="tokenURI" id="tokenURI" value="Meta Path">
+              <hr/>
+              <button type="submit" id="cardCollect" class="btn btn-primary cardCollect">Add to My Tribe</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
